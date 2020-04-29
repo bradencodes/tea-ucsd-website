@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+#background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: #fdd585; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDD585', endColorstr='#FDA085',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  max-width: 860px;
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+header {
+  width: 100%;
+  max-width: 1280px;
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tea-ucsd-logo {
+  width: 540px;
+  height: auto;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 12px;
+}
+.social-link:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.social-logo {
+  width: 100%;
+  height: auto;
+}
+
+.facebook {
+  background-color: #3c64a6;
+}
+
+.instagram {
+  background-color: #f00075;
+}
+
+.linkedin {
+  background-color: #0a66c2;
+}
+
+section {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 3.6rem;
+  color: #103b72;
+}
+
+p {
+  margin: 20px 0 0 0;
+  font-size: 2.4rem;
+  opacity: 0.87;
+}
+
+.google-calendar {
+  width: 100%;
+  height: 600px;
+  border-width: 0;
+  margin: 20px auto 0;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    flex-direction: column;
+  }
+
+  .social-links {
+    margin-top: 40px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .social-link {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tea-ucsd-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-link {
+    width: 64px;
+    height: 64px;
+  }
+
+  #content {
+    padding: 20px 10px;
+  }
+
+  section {
+    margin-top: 20px;
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    margin: 10px 0 0 0;
+    font-size: 1.6rem;
+  }
+
+  .google-calendar {
+    height: 400px;
+  }
+}
