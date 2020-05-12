@@ -133,6 +133,15 @@ p {
   max-width: 1000px;
 }
 
+.newsletter-logo {
+  width: 100%;
+  height: auto;
+}
+
+.form-text {
+  margin-left: 3%;
+}
+
 @media screen and (max-width: 600px) {
   header {
     width: 100%;
