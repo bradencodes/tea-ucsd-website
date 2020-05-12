@@ -70,6 +70,7 @@ header {
 
 .social-links {
   display: flex;
+  margin-right: 64px;
 }
 
 .social-link {
@@ -133,11 +134,16 @@ p {
     flex-direction: column;
   }
 
+  .tea-ucsd-logo {
+    margin-left: -48px;
+  }
+
   .social-links {
     margin-top: 40px;
     justify-content: space-around;
     width: 100%;
     max-width: 400px;
+    margin-right: 0;
   }
 
   .social-link {
@@ -154,6 +160,7 @@ p {
   .tea-ucsd-logo {
     width: 100%;
     height: auto;
+    margin: 0;
   }
 
   .social-link {
