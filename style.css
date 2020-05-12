@@ -44,7 +44,7 @@ body {
 #content {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 0 20px 40px;
   max-width: 860px;
   width: 100%;
 }
@@ -60,24 +60,28 @@ header {
   padding: 40px 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .tea-ucsd-logo {
-  width: 540px;
+  width: 100%;
+  max-width: 642px;
   height: auto;
+  margin-left: -48px;
 }
 
 .social-links {
   display: flex;
-  margin-right: 64px;
+  margin: 40px 0 0;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
 }
 
 .social-link {
   width: 80px;
   height: 80px;
   border-radius: 10px;
-  margin-left: 40px;
   cursor: pointer;
   padding: 12px;
 }
@@ -127,28 +131,6 @@ p {
   border-width: 0;
   margin: 20px auto 0;
   max-width: 1000px;
-}
-
-@media screen and (max-width: 1100px) {
-  header {
-    flex-direction: column;
-  }
-
-  .tea-ucsd-logo {
-    margin-left: -48px;
-  }
-
-  .social-links {
-    margin-top: 40px;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 400px;
-    margin-right: 0;
-  }
-
-  .social-link {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 600px) {
