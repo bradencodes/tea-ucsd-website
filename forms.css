@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+#background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: -1;
+
+  background: #fdd585; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #fdd585 0%,
+    #fda085 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDD585', endColorstr='#FDA085',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.tea-ucsd-logo {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-left: -48px;
+}
